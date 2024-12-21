@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Filterable Gallery with images of Cats, Horses, Food and Nature"
+    />
+    <meta name="keywords" content="Gallery, Cats, Horses, Food, Nature" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Image Gallery</title>
+  </head>
+  <body>
+    <header>
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="food">Food</button>
+      <button data-filter="cats">Cats</button>
+      <button data-filter="horses">Horses</button>
+    </header>
+    <section class="gallery">
+      <!-- Nature Images -->
+
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/nature/nature1.jpg" alt="Nature Image 1" />
+        <div class="caption">Blue Bird</div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/nature/nature2.jpg" alt="Nature Image 2" />
+        <div class="caption">Flowers in a Pot</div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/nature/nature3.jpg" alt="Nature Image 3" />
+        <div class="caption">Blue Bird on Flower</div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/nature/nature4.jpg" alt="Nature Image 4" />
+        <div class="caption">Orange Butterflies</div>
+      </div>
+
+      <!-- Food Images -->
+
+      <div class="gallery-item" data-category="food">
+        <img src="assets/food/food1.jpg" alt="Food Image 1" />
+        <div class="caption">Turkish Kebabs</div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="assets/food/food2.jpg" alt="Food Image 2" />
+        <div class="caption">Lemon Tuna</div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="assets/food/food3.jpg" alt="Food Image 3" />
+        <div class="caption">Meduim Cooked Steak</div>
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="assets/food/food4.jpg" alt="Food Image 4" />
+        <div class="caption">Strawberry Pie</div>
+      </div>
+
+      <!-- Cats Images -->
+
+      <div class="gallery-item" data-category="cats">
+        <img src="assets/cats/cat1.jpg" alt="Cat Image 1" />
+        <div class="caption">British Short-hair</div>
+      </div>
+      <div class="gallery-item" data-category="cats">
+        <img src="assets/cats/cat2.jpg" alt="Cat Image 2" />
+        <div class="caption">Orange Cat</div>
+      </div>
+      <div class="gallery-item" data-category="cats">
+        <img src="assets/cats/cat3.jpg" alt="Cat Image 3" />
+        <div class="caption">Black Cat</div>
+      </div>
+      <div class="gallery-item" data-category="cats">
+        <img src="assets/cats/cat4.jpg" alt="Cat Image 4" />
+        <div class="caption">Cat Sleeping</div>
+      </div>
+
+      <!-- Horses Images -->
+
+      <div class="gallery-item" data-category="horses">
+        <img src="assets/Horses/horse1.jpg" alt="Horse Image 1" />
+        <div class="caption">Two Horses</div>
+      </div>
+      <div class="gallery-item" data-category="horses">
+        <img src="assets/Horses/horse2.jpg" alt="Horse Image 2" />
+        <div class="caption">Baby Horse</div>
+      </div>
+      <div class="gallery-item" data-category="horses">
+        <img src="assets/Horses/horse3.jpg" alt="Horse Image 3" />
+        <div class="caption">Running Horse</div>
+      </div>
+      <div class="gallery-item" data-category="horses">
+        <img src="assets/Horses/horse4.jpg" alt="Horse Image 4" />
+        <div class="caption">White Horse</div>
+      </div>
+      <!-- More images can be added here -->
+    </section>
+    <button id="load-more">Load More</button>
+    <button id="hide-more">Hide</button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
