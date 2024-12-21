@@ -19,7 +19,7 @@ Load More: A "Load More" button loads additional images without reloading the pa
 
 Getting Started:
 
-Clone the repository: git clone 
+Clone the repository: git clone https://github.com/TAJAMUL11/Filterable_Gallery.git
 Open in a code editor: Open the project in a code editor of your choice.
 Open index.html in a web browser: View the gallery in your browser.
 Usage:
