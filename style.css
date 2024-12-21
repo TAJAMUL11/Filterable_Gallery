@@ -7,6 +7,7 @@
   font-family: "Nunito", serif;
   font-weight: 500;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -142,6 +143,23 @@ button:hover {
   opacity: 1;
 }
 
+.gallery-item .expand {
+  font-size: 0.6rem;
+  position: absolute;
+  backdrop-filter: blur(3px);
+  top: 3%;
+  right: 0%;
+  background-color: var(--Button-Background-Color);
+  color: var(--Primary-Text-Color);
+  padding: 0.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.gallery-item:hover .expand {
+  opacity: 1;
+}
+
 #load-more {
   display: block;
   margin: 1.3rem auto;
@@ -198,7 +216,7 @@ button:hover {
   font-size: 1.06rem;
   transition: 0.3s;
   user-select: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--Button-Background-Color);
   border: none;
   cursor: pointer;
 }
@@ -212,7 +230,7 @@ button:hover {
 }
 
 .lightbox-nav:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--Button-Hover-Background-Color);
 }
 
 @media (max-width: 515px) {

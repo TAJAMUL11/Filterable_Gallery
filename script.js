@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.display = "none";
     }
 
-    item.addEventListener("click", () => {
+    item.querySelector(".expand").addEventListener("click", () => {
       lightbox.classList.add("active");
       lightboxImg.src = item.querySelector("img").src;
       currentIndex = index;
